@@ -1,0 +1,23 @@
+{
+  "name": "Mojo bot",
+  "version": "1.0.0",
+  "description": "Discord bot",
+  "main": "bot.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "\"echo hi\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "nein"
+  },
+  "keywords": [
+    "kek"
+  ],
+  "author": "Pat",
+  "license": "ISC"
+}
