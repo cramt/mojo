@@ -19,6 +19,10 @@ var contains = {
   },
   "patrick" : function(message) {
     message.channel.sendMessage(`<@${admins[0]}>, <@${message.author.id}> talked about you`);
+  },
+  "cock" : function(message) {
+    message.channel.sendMessage("8=:fist:=D:sweat_drops:");
+    message.channel.sendMessage(':sweat:');
   }
 }
 
