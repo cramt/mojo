@@ -18,8 +18,7 @@ var contains = {
     message.channel.sendFile("https://images-na.ssl-images-amazon.com/images/I/510DjIxtKPL.jpg");
   },
   "patrick" : function(message) {
-    // broke as fuck
-    message.channel.sendMessage(`@Pat#6702, @${message.author.username}#${message.author.discriminator} talked about you`);
+    message.channel.sendMessage(`<@${admins[0]}>, <@${message.author.id}> talked about you`);
   }
 }
 
