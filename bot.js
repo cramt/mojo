@@ -23,6 +23,12 @@ var contains = {
   "cock" : function(message) {
     message.channel.sendMessage("8=:fist:=D:sweat_drops:");
     message.channel.sendMessage(':sweat:');
+  },
+  "mojo": function(message) {
+	message.channel.sendMessage("SCIENCE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+  },
+  "din mor": function(message) {
+	message.channel.sendMessage("oh snap!!!");
   }
 }
 
@@ -50,15 +56,11 @@ var adminCommands = {
 
 bot.on("ready", () => {
   console.log("MOJO ready for science!");
+  
 });
 
 bot.on("message", message => {
   if (message.author.id == botID) { return false; }
-
-  if(message.content.toLowerCase().indexOf("mojo") != -1) {
-    message.channel.sendMessage("SCIENCE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-  }
-
   for (var k in contains) {
     if (message.content.toLowerCase().includes(k)) {
       contains[k](message);
